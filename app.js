@@ -29,7 +29,6 @@ app.post("/api/v1/usuario", (req, res) => {
   const newUsuario = new usuario(req.body);
   newUsuario.save();
   console.log("Peticion recibidas");
-  console.log({ body: req.body });
   res.status(201).json({ ok: true });
 });
 app.use(express.static(path.join(__dirname, "public")));
