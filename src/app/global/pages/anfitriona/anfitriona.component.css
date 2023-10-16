@@ -1,0 +1,45 @@
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 90%;
+}
+.Grid-Nosotros {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-image: url("src/assets/images/jefa.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  margin-bottom: 28rem;
+}
+.nosotros h3 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-style: italic;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+.nosotros p {
+  line-height: 1.5;
+  text-align: justify;
+}
+@media (min-width: 1200px) {
+  .Grid-Nosotros {
+    grid-template-columns: repeat(2, 1fr);
+    background-position: top right;
+  }
+}
+.nosotros {
+  background-color: white;
+  padding: 4rem 5rem;
+}
+@media (min-width: 1200px) {
+  .nosotros h3 {
+    font-size: 6rem;
+  }
+  .nosotros p {
+    line-height: 2;
+  }
+}

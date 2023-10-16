@@ -1,0 +1,100 @@
+<div class="titulo">
+    <h2>Regístrate</h2>
+    <form action="" class="formulario centrar" [formGroup]="productoForm" (ngSubmit)="agregarProducto()">
+        <fieldset>
+            <legend>TUS DATOS</legend>
+            <div class="campo">
+                <label for="Nombre">Tu Nombre*</label>
+                <input formControlName="nombre" id="Nombre" type="text" placeholder="Nombre" autocomplete="off"
+                    required>
+            </div>
+            <div class="campo">
+                <label for="Correo">Tu Correo*</label>
+                <input formControlName="correo" id="Correo" type="email" placeholder="Correo" autocomplete="off"
+                    required>
+            </div>
+            <div class="campo">
+                <label for="Teléfono">Tu Teléfono*</label>
+                <input formControlName="telefono" id="Teléfono" type="number" placeholder="Teléfono" autocomplete="off"
+                    required>
+            </div>
+            <div class="campo">
+                <label for="Mensaje">Tu Mensaje</label>
+                <textarea formControlName="mensaje" name="" id="Mensaje" cols="30" rows="10">
+
+                </textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Servicio</legend>
+            <div class="campo">
+                <label for="servicio">Escoge tu servicio*</label>
+                <select formControlName="Servicio" name="" id="servicio" required>
+                    <option value="">-- Seleccione --</option>
+                    <option value="Facturación electrónica ">Facturación electrónica.</option>
+                    <option value="Organización De Información Contable">Organización De Información Contable.</option>
+                    <option value="Creación De Empresas">Creación De Empresas.</option>
+                    <option value="Procesos Ante Cámara Y Comercio">Procesos Ante Cámara Y Comercio.</option>
+                    <option value="Paquetes En Establecimientos">Paquetes En Establecimientos.</option>
+                    <option value="Declaración De Renta">Declaración De Renta.</option>
+                    <option value="Elaboración De Exógenas">Elaboración De Exógenas.</option>
+                    <option value="Impuestos">Impuestos.</option>
+                    <option value="Rut">Rut.</option>
+                    <option value="Balances Y Certificados">Balances Y Certificados.</option>
+                </select>
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Informacion extra</legend>
+            <div class="escoger">
+                <label class="escoger" for="">¿Es la primera vez que usas nuestros servicios?*</label>
+            </div>
+            <div class="campo">
+                <label for="opcion1">Si es la primera vez</label>
+                <input formControlName="anterioridad" type="radio" value="Si" required>
+            </div>
+            <div class="campo">
+                <label for="opcion2">No es la primera vez</label>
+                <input formControlName="anterioridad" type="radio" value="No" required>
+            </div>
+            <div class="campo espacio">
+                <label for="listas">¿Por qué nos elegiste?*</label>
+                <input autocomplete="off" formControlName="proqueEligio" list="lista" id="listas" required>
+                <datalist id="lista">
+                    <option value="Publicidad de la empresa"></option>
+                    <option value="Recomendación de un tercero"></option>
+                    <option value="Había interactuado antes con la empresa"></option>
+                    <option value="No encontré otra alternativa"></option>
+                </datalist>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Politica de datos
+            </legend>
+            <div class="escoger ">
+                <div class="politicaDatos">
+                    <label>Aqui tenemos nuestra política de privacidad de datos</label>
+                </div>
+                <div class="politicaDatos">
+                    <a routerLink="PoliticaDeDatos">Politica de datos</a>
+                </div>
+                <div class="campo">
+                    <label>Aceptar términos*</label>
+                    <input formControlName="aceptarTerminos" type="radio" value="Si" required>
+                </div>
+            </div>
+
+        </fieldset>
+
+
+        <div class="enviar">
+            <input type="submit" value="Enviar formulario">
+        </div>
+
+    </form>
+</div>

@@ -1,0 +1,96 @@
+.contenedor-navegacion-principal {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-items: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.contenedor-navegacion-principal img {
+  width: 5.5rem;
+  height: 5.5rem;
+  object-fit: cover;
+}
+.enlaces__navegacion-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.enlaces__navegacion-principal a {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 700;
+  font-style: italic;
+  transition: color 0.3s ease-out;
+}
+.enlaces__navegacion-principal a:hover {
+  color: #db2a34;
+}
+.contacto_navegacion-principal img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: background-color 0.3s ease-out;
+  object-fit: cover;
+}
+.contacto_navegacion-principal img:hover {
+  background-color: #d3d0d0;
+  transform: scale(1.1);
+}
+@media (min-width: 768px) {
+  .enlaces__navegacion-principal {
+    flex-direction: row;
+  }
+  .enlaces__navegacion-principal a {
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+    font-size: 1.8rem;
+  }
+  .contenedor-navegacion-principal img {
+    width: 6rem;
+    height: 6rem;
+  }
+  .contacto_navegacion-principal img {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+  .contenedor-navegacion-principal {
+    margin: 2rem 0;
+  }
+}
+@media (min-width: 1200px) {
+  .enlaces__navegacion-principal a {
+    margin-left: 5rem;
+    margin-right: 2rem;
+    font-size: 1.9rem;
+  }
+  .contenedor-navegacion-principal img {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+  .contacto_navegacion-principal img {
+    width: 5.8rem;
+    height: 5.8rem;
+  }
+}
+@media (min-width: 1600px) {
+  .enlaces__navegacion-principal a {
+    margin-left: 5.5rem;
+    margin-right: 2.8rem;
+    font-size: 2rem;
+  }
+  .contenedor-navegacion-principal img {
+    width: 8rem;
+    height: 8rem;
+  }
+  .contacto_navegacion-principal img {
+    width: 6rem;
+    height: 6rem;
+  }
+  .contenedor-navegacion-principal {
+    margin: 1rem 0;
+  }
+}

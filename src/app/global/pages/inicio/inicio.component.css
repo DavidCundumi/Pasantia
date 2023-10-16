@@ -1,0 +1,511 @@
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 90%;
+}
+.contenedor-navegaciones {
+  max-width: 30rem;
+  margin: 0 auto;
+  width: 90%;
+}
+.desvordamiento {
+  overflow: hidden;
+}
+
+/*Bloque imagen principal*/
+
+.imagenes_principales {
+  background-image: url("src/assets/images/fotospaginainicio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 55rem;
+  width: 100%;
+  background-color: rgb(60, 60, 60);
+  background-blend-mode: soft-light;
+  animation: animate 15s ease-out infinite; /*Efecto ken burns*/
+}
+@keyframes animate {
+  100% {
+    transform: scale(1.2);
+  }
+}
+.single-slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  animation: slider-animation;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#slide-1 {
+  animation-delay: 1s;
+  background-image: url("src/assets/images/female-financial-adviser-explaining-business-plan.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 82rem;
+  background-color: rgb(60, 60, 60);
+  background-blend-mode: soft-light;
+}
+
+@keyframes slider-animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0;
+  }
+}
+
+.contenedor-imagenes-principales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contenedor-imagenes-principales h1 {
+  color: #ffffff;
+  font-style: italic;
+  font-size: 3.5rem;
+  font-weight: 800;
+  -webkit-text-stroke-color: #000;
+  stroke: #000;
+  text-shadow: 0px 0px 100px rgb(0 0 0 / 30%);
+}
+.contenedor-imagenes-principales h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  -webkit-text-stroke-color: #000;
+  stroke: #000;
+  text-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+  padding-bottom: 4.5rem;
+}
+.contenedor-imagenes-principales a {
+  padding: 0.8rem 2rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 4rem;
+  transition: background-color 0.3s ease-out;
+}
+
+.btn-1 a {
+  background-color: #000;
+  margin-right: 1rem;
+}
+.btn-2 a {
+  background-color: #db2a34;
+  margin-left: 1rem;
+}
+
+
+@media (min-width: 768px) {
+  .imagenes_principales {
+    height: 75rem;
+  }
+  .contenedor-imagenes-principales h1 {
+    font-size: 4rem;
+  }
+  .contenedor-imagenes-principales h2 {
+    font-size: 1.8rem;
+  }
+  .contenedor-imagenes-principales a {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .imagenes_principales {
+    height: 75rem;
+  }
+  .contenedor-imagenes-principales h1 {
+    font-size: 4.5rem;
+  }
+  .contenedor-imagenes-principales h2 {
+    font-size: 2rem;
+  }
+  .contenedor-imagenes-principales a {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1600px) {
+  .imagenes_principales {
+    height: 82rem;
+  }
+  .contenedor-imagenes-principales h1 {
+    font-size: 6.5rem;
+  }
+  .contenedor-imagenes-principales h2 {
+    font-size: 2.7rem;
+  }
+  .contenedor-imagenes-principales a {
+    padding: 1rem 3rem;
+    font-size: 2.2rem;
+  }
+}
+.contenedor-seccion-nosotros {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 15rem;
+  justify-items: center;
+}
+.contenedor-descripcion_nosotros h2 {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.contenedor-seccion-nosotros img {
+  transition: 0.3s ease-out;
+  object-fit: cover;
+  height: 18rem;
+}
+.contenedor-seccion-nosotros img:hover {
+  transform: scale(1.1);
+}
+.contenedor-descripcion_nosotros {
+  padding: 0 2rem;
+}
+.contenedor-descripcion_nosotros p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+}
+.contenedor-descripcion_nosotros li {
+  line-height: 2;
+}
+.contenedor-descripcion_nosotros strong {
+  font-size: 1.8rem;
+}
+.parrafo-nosotros p {
+  font-weight: bold;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .contenedor-seccion-nosotros {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contenedor-descripcion_nosotros h2 {
+    font-size: 2.5rem;
+  }
+  .contenedor-seccion-nosotros img {
+    transition: 0.3s ease-out;
+    object-fit: cover;
+    height: 28rem;
+  }
+  .contenedor-descripcion_nosotros p {
+    font-size: 1.1rem;
+  }
+  .parrafo-nosotros p {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .contenedor-descripcion_nosotros h2 {
+    font-size: 3.8rem;
+  }
+  .contenedor-seccion-nosotros img {
+    transition: 0.3s ease-out;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .contenedor-descripcion_nosotros p {
+    font-size: 1.6rem;
+  }
+  .parrafo-nosotros p {
+    font-size: 2.3rem;
+  }
+}
+/*Bloque otras navegaciones*/
+
+.contendor-grid-otras-navegacions {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 5rem;
+  gap: 3rem;
+}
+.contendor-otras-navegacions img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  transition: 0.3s ease-out;
+}
+.contendor-otras-navegacions img:hover {
+  transform: scale(1.05);
+}
+.contendor-otras-navegacions a {
+  padding-bottom: 0.1rem;
+  display: block;
+  text-align: center;
+  border-bottom-right-radius: 2rem;
+  transition: background-color 0.4s ease-out;
+}
+.contendor-otras-navegacions a:hover {
+  background-color: #3a3232;
+  color: #ffffff;
+}
+.contendor-otras-navegacions h3 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.contendor-otras-navegacions h2 {
+  text-align: center;
+  margin-top: 15rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+}
+@media (min-width: 768px) {
+  .contenedor-navegaciones {
+    max-width: 50rem;
+  }
+  .contendor-grid-otras-navegacions {
+    margin-top: 8rem;
+  }
+  .contendor-otras-navegacions img {
+    height: 15rem;
+  }
+  .contendor-otras-navegacions a {
+    border-bottom-right-radius: 3rem;
+  }
+  .contendor-otras-navegacions h3 {
+    font-size: 1.8rem;
+  }
+  .contendor-otras-navegacions h2 {
+    font-size: 2.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  .contenedor-navegaciones {
+    max-width: 120rem;
+  }
+  .contendor-grid-otras-navegacions {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contendor-grid-otras-navegacions {
+    margin-top: 10rem;
+  }
+  .contendor-otras-navegacions img {
+    height: 25rem;
+  }
+  .contendor-otras-navegacions a {
+    border-bottom-right-radius: 3.5rem;
+  }
+  .contendor-otras-navegacions h3 {
+    font-size: 2rem;
+  }
+  .contendor-otras-navegacions h2 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 1600px) {
+  .contendor-otras-navegacions img {
+    height: 28rem;
+  }
+  .contendor-otras-navegacions a {
+    border-bottom-right-radius: 4rem;
+  }
+  .contendor-otras-navegacions h3 {
+    font-size: 2.5rem;
+  }
+  .contendor-otras-navegacions h2 {
+    font-size: 4rem;
+  }
+}
+/*Bloque horarios*/
+.contenedor-horario {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 4rem;
+}
+.titulo-horario h2 {
+  text-align: center;
+  margin-top: 15rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 5rem;
+}
+
+.imagenHorario img {
+  width: 100%;
+  height: 35rem;
+  object-fit: cover;
+  transition: 0.5s ease-out;
+}
+.imagenHorario img:hover {
+  transform: scale(1.1);
+}
+.descripcion fieldset {
+  border: #000 0.2rem solid;
+  border-top-right-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+}
+.descripcion p {
+  font-size: 1rem;
+}
+.flex-titulos-horario {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background-color: #3a3232;
+  padding: 1rem 0;
+  border-top-right-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+}
+.flex-titulos-horario span {
+  margin-left: 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.contenedor-Descripcion-horario {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding: 1rem;
+}
+.contenedor-Descripcion-horario p {
+  font-weight: bold;
+}
+.cerrado {
+  grid-column: 2/4;
+}
+@media (min-width: 768px) {
+  .contenedor-horario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .imagenHorario img {
+    height: 28.5rem;
+  }
+  .titulo-horario h2 {
+    font-size: 2.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  .descripcion p {
+    font-size: 1.6rem;
+  }
+  .imagenHorario img {
+    height: 43.5rem;
+  }
+  .titulo-horario h2 {
+    font-size: 3.5rem;
+    margin-top: 20rem;
+  }
+  .flex-titulos-horario span {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 1600px) {
+  .titulo-horario h2 {
+    font-size: 4rem;
+  }
+}
+.contenedor-hablemos-imagen {
+  background-image: url("src/assets/images/miagendeantesdelfoter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /*Estyo hace el efecto scrol*/
+  height: 30rem;
+  background-position: center;
+  margin-top: 10rem;
+}
+.contenedor-hablemos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(65, 65, 65);
+  background-blend-mode: soft-light;
+}
+.contenedor-hablemos h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.contenedor-hablemos a {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 0.8rem 2.5rem;
+  background-color: #000;
+  border-radius: 5rem;
+  transition: background-color 0.3s ease-out;
+}
+.contenedor-hablemos a:hover {
+  background-color: #3a3232;
+}
+@media (min-width: 768px) {
+  .contenedor-hablemos-imagen {
+    height: 35rem;
+  }
+  .contenedor-hablemos h2 {
+    font-size: 2.8rem;
+  }
+  .contenedor-hablemos a {
+    font-size: 1.8rem;
+    padding: 1rem 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .contenedor-hablemos-imagen {
+    height: 38rem;
+    margin-top: 20rem;
+  }
+  .contenedor-hablemos h2 {
+    font-size: 3.2rem;
+  }
+  .contenedor-hablemos a {
+    font-size: 2.2rem;
+    padding: 1.2rem 2.5rem;
+  }
+}
+@media (min-width: 1600px) {
+  .contenedor-hablemos-imagen {
+    height: 42rem;
+    margin-top: 25rem;
+  }
+  .contenedor-hablemos h2 {
+    font-size: 4rem;
+  }
+  .contenedor-hablemos a {
+    font-size: 2rem;
+    padding: 1rem 2.5rem;
+  }
+}
+.contenedor-foter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  padding: 9rem 20rem;
+  background-color: #181818;
+  color: #ffffff;
+  gap: 10rem;
+}
+.contenedor-foter h3 {
+  text-align: center;
+  margin-right: 4rem;
+  font-size: 3.5rem;
+}
+.contenedor-foter a {
+  color: #ffffff;
+  font-size: 1.8rem;
+  line-height: 2;
+}
+.contenedor-foter p {
+  line-height: 2;
+}

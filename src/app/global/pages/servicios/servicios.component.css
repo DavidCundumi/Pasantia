@@ -1,0 +1,106 @@
+.contenedor {
+  max-width: 30rem;
+  margin: 0 auto;
+  width: 90%;
+}
+.desvordamiento {
+  overflow: hidden;
+}
+
+.contendor-grid-otras-navegacions {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 3rem;
+  margin-bottom: 15rem;
+}
+.contendor-otras-navegacions img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  transition: 0.3s ease-out;
+}
+.contendor-otras-navegacions img:hover {
+  transform: scale(1.05);
+}
+.contendor-otras-navegacions a {
+  padding-bottom: 0.1rem;
+  display: block;
+  text-align: center;
+  border-bottom-right-radius: 2rem;
+  transition: background-color 0.4s ease-out;
+}
+.contendor-otras-navegacions a:hover {
+  background-color: #3a3232;
+  color: #ffffff;
+}
+.contendor-otras-navegacions h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0rem 1rem;
+  font-style: italic;
+}
+.contendor-otras-navegacions h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+  font-style: italic;
+  text-transform: capitalize;
+}
+@media (min-width: 768px) {
+  .contenedor {
+    max-width: 50rem;
+  }
+  .contendor-grid-otras-navegacions {
+    margin-top: 8rem;
+  }
+  .contendor-otras-navegacions img {
+    height: 15rem;
+  }
+  .contendor-otras-navegacions a {
+    border-bottom-right-radius: 3rem;
+  }
+  .contendor-otras-navegacions h3 {
+    font-size: 1.8rem;
+  }
+  .contendor-otras-navegacions h2 {
+    font-size: 2.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  .contendor-grid-otras-navegacions {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contenedor {
+    max-width: 120rem;
+  }
+  .contendor-grid-otras-navegacions {
+    margin-top: 10rem;
+  }
+  .contendor-otras-navegacions img {
+    height: 25rem;
+  }
+  .contendor-otras-navegacions a {
+    border-bottom-right-radius: 3.5rem;
+  }
+  .contendor-otras-navegacions h3 {
+    font-size: 2rem;
+  }
+  .contendor-otras-navegacions h2 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 1600px) {
+  .contendor-otras-navegacions img {
+    height: 28rem;
+  }
+  .contendor-otras-navegacions a {
+    border-bottom-right-radius: 4rem;
+  }
+  .contendor-otras-navegacions h3 {
+    font-size: 2.5rem;
+  }
+  .contendor-otras-navegacions h2 {
+    font-size: 4rem;
+  }
+}

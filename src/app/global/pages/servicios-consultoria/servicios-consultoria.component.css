@@ -1,0 +1,220 @@
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 90%;
+}
+.Grid-Nosotros {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-image: url("src/assets/images/facturacion-electronica.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 10rem;
+}
+.nosotros h3 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-style: italic;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+.nosotros p {
+  line-height: 1.5;
+  text-align: justify;
+}
+@media (min-width: 1200px) {
+  .Grid-Nosotros {
+    grid-template-columns: repeat(2, 1fr);
+    background-position: top right;
+    background-size: 90%;
+  }
+}
+.nosotros {
+  background-color: white;
+  padding: 4rem 5rem;
+}
+@media (min-width: 1200px) {
+  .nosotros h3 {
+    font-size: 6rem;
+  }
+  .nosotros p {
+    line-height: 2;
+  }
+}
+.Grid-Mision {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-image: url("src/assets/images/InformacionContable.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 8rem;
+}
+.Mision h3 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-style: italic;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+.Mision p {
+  line-height: 1.5;
+  text-align: justify;
+}
+@media (min-width: 1200px) {
+  .Grid-Mision {
+    grid-template-columns: repeat(2, 1fr);
+    background-size: 80%;
+  }
+}
+.Mision {
+  background-color: white;
+  padding: 4rem 5rem;
+}
+@media (min-width: 1200px) {
+  .Mision {
+    grid-column: 2/3;
+  }
+  .Mision h3 {
+    font-size: 6rem;
+  }
+  .Mision p {
+    line-height: 2;
+  }
+}
+.Grid-Vision {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-image: url("src/assets/images/CreacionEmpresa.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 15rem;
+}
+.Vision h3 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-style: italic;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+.Vision p {
+  line-height: 1.5;
+  text-align: justify;
+}
+@media (min-width: 1200px) {
+  .Grid-Vision {
+    grid-template-columns: repeat(2, 1fr);
+    background-position: bottom right;
+    background-size: 90%;
+  }
+}
+.Vision {
+  background-color: white;
+  padding: 4rem 5rem;
+}
+@media (min-width: 1200px) {
+  .Vision {
+    grid-row: 2/3;
+  }
+  .Vision h3 {
+    font-size: 6rem;
+  }
+  .Vision p {
+    line-height: 2;
+  }
+}
+
+.Grid-camara {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-image: url("src/assets/images/camaraComercio.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 15rem;
+}
+.camara h3 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-style: italic;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+.camara p {
+  line-height: 1.5;
+  text-align: justify;
+}
+@media (min-width: 1200px) {
+  .Grid-camara {
+    grid-template-columns: repeat(2, 1fr);
+    background-position: bottom left;
+    background-size: 90%;
+  }
+}
+.camara {
+  background-color: white;
+  padding: 4rem 5rem;
+}
+@media (min-width: 1200px) {
+  .camara {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  .camara h3 {
+    font-size: 6rem;
+  }
+  .camara p {
+    line-height: 2;
+  }
+}
+
+.Grid-paquetes {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-image: url("src/assets/images/pauqteEstablecimiento.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 15rem;
+}
+.paquetes h3 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-style: italic;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+.paquetes p {
+  line-height: 1.5;
+  text-align: justify;
+}
+@media (min-width: 1200px) {
+  .Grid-paquetes {
+    grid-template-columns: repeat(2, 1fr);
+    background-position: bottom right;
+    background-size: 90%;
+  }
+}
+.paquetes {
+  background-color: white;
+  padding: 4rem 5rem;
+}
+@media (min-width: 1200px) {
+  .paquetes {
+    grid-row: 2/3;
+  }
+  .paquetes h3 {
+    font-size: 6rem;
+  }
+  .paquetes p {
+    line-height: 2;
+  }
+}

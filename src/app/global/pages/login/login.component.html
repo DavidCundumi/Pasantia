@@ -1,0 +1,25 @@
+<section class="contenedor titulo">
+    <h2>Registro de administrador</h2>
+    <div class="contenedor-registro">
+        <form action="" class="formulario centrar" [formGroup]="productoForm" (ngSubmit)="cargarDatos()">
+            <fieldset>
+                <legend>Registro</legend>
+                <div class="campo">
+                    <label for="usuario">Usuario*</label>
+                    <input formControlName="usuario" id="usuario" type="text" placeholder="Usuario" autocomplete="off"
+                        required>
+                </div>
+                <div class="campo">
+                    <label for="contraseña">Contraseña*</label>
+                    <input formControlName="contraseña" id="contraseña" type="password" placeholder="Contraseña"
+                        autocomplete="off" required>
+                </div>
+
+            </fieldset>
+            <div class="enviar">
+                <input type="submit" value="Enviar">
+            </div>
+
+        </form>
+    </div>
+</section>
