@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 const path = require("path");
 const app = express();
-const cors = require('cors');
+
 
 mongoose
   .connect(
@@ -25,10 +25,8 @@ const productSchema = mongoose.Schema({
 });
 const usuario = mongoose.model("Usuario", productSchema);
 app.use(express.json());
-app.use(cors({
-  origin: 'https://globalsas.vercel.app'
-}));
-app.post("/api/v1/usuario", (req, res) => {
+
+app.post("https://globalsas.vercel.app", (req, res) => {
   const newUsuario = new usuario(req.body);
   newUsuario.save();
   console.log("Peticion recibidas");
