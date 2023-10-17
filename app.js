@@ -4,6 +4,7 @@ require("dotenv").config();
 const path = require("path");
 const app = express();
 
+
 mongoose
   .connect(
     `mongodb+srv://santiscundumi:${process.env.MONGO_DB_PASS}@development.aegvrad.mongodb.net/?retryWrites=true&w=majority`
@@ -25,7 +26,7 @@ const productSchema = mongoose.Schema({
 const usuario = mongoose.model("Usuario", productSchema);
 app.use(express.json());
 
-app.post("/api/v1/usuario", (req, res) => {
+app.post("https://globalsas.vercel.app/api/v1/usuario", (req, res) => {
   const newUsuario = new usuario(req.body);
   newUsuario.save();
   console.log("Peticion recibidas");
@@ -33,3 +34,7 @@ app.post("/api/v1/usuario", (req, res) => {
 });
 app.use(express.static(path.join(__dirname, "public")));
 const port = process.env.PORT;
+const mySecretKey1 = process.env.MONGO_DB_PASS;
+console.log(mySecretKey1);
+const mySecretKey2 = process.env.CONTRASENA;
+console.log(mySecretKey2);
