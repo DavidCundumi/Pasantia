@@ -26,7 +26,7 @@ const productSchema = mongoose.Schema({
 const usuario = mongoose.model("Usuario", productSchema);
 app.use(express.json());
 
-app.post("https://globalsas.vercel.app", (req, res) => {
+app.post("/api/v1/usuario", (req, res) => {
   const newUsuario = new usuario(req.body);
   newUsuario.save();
   console.log("Peticion recibidas");
