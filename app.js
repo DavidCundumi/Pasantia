@@ -34,7 +34,5 @@ app.post("/api/v1/usuario", (req, res) => {
 });
 app.use(express.static(path.join(__dirname, "public")));
 const port = process.env.PORT;
-const mySecretKey1 = process.env.MONGO_DB_PASS;
-console.log(mySecretKey1);
 const mySecretKey2 = process.env.CONTRASENA;
 console.log(mySecretKey2);
